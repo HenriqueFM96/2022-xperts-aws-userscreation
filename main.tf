@@ -4,7 +4,6 @@ terraform {
     aws = {
         source = "hashicorp/aws"
         version = "4.34.0"
-        region  = "us-east-1"
     }
   }
 }
