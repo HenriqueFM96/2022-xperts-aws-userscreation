@@ -1,5 +1,5 @@
 variable "region" {
-    name = "us-east-1"
+    default = "us-east-1"
 }
 variable "profile" {}
 variable "AWS_ACCESS_KEY_ID" {}
