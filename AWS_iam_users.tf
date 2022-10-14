@@ -1,11 +1,11 @@
 resource "aws_iam_user" "stdts-accounts" {
-  count = 2
+  count = 5
   name = "student${count.index}"
 }
 
 resource "aws_iam_user_login_profile" "stdts_login" {
-    count = 2
-    provider = aws.AWS-Account-0
+    count = 5
+    #provider = aws.AWS-Account-0
     user = "student${count.index}"
     password_length = 10 
     password_reset_required = true
