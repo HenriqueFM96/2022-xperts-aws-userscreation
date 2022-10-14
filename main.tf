@@ -3,19 +3,18 @@ terraform {
   required_providers {
     aws = {
         source = "hashicorp/aws"
+        version = "4.34.0"
     }
   }
 }
 
 provider "aws" {
-    alias   = "AWS-Account-00"
+    alias   = "AWS-Account-0"
     region  = var.region
-    profile = var.profile
 }
 
 provider "aws" {
-    alias   = "AWS-Account-01"
+    alias   = "AWS-Account-1"
     region  = var.region
-    profile = var.profile
 }
 
