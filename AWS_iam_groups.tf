@@ -54,6 +54,7 @@ resource "aws_iam_group_policy_attachment" "stdts-s3-policies" {
   policy_arn = aws_iam_policy.s3_stdt.arn
 }
 
+/*
 ## Setting up the admin group account with desired permissions
 resource "aws_iam_group" "xperts-admins" {
   name = "xperts-admins"
@@ -63,3 +64,4 @@ resource "aws_iam_group_policy_attachment" "xperts-policies" {
   group      = aws_iam_group.xperts-admins.name
   policy_arn = "arn:aws:iam::aws:policy/job-function/SystemAdministrator"
 }
+*/
