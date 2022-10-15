@@ -5,7 +5,7 @@ resource "aws_iam_account_alias" "Account-00112233" {
 */
 
 resource "aws_account_alternate_contact" "operations" {
-  alternate_contact_type = "Operations"
+  alternate_contact_type = "OPERATIONS"
   name          = "Example"
   title         = "Example"
   email_address = "test@example.com"
